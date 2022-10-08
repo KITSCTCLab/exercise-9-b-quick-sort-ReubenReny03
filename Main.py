@@ -8,7 +8,7 @@ def sorting(data, low ,high):
             i+=1
             data[j], data[i] =  data[i], data[j]
     data[i+1], pivot = pivot,data[i+1]
-    return i+1
+    return i
     
 
 def quick_sort(data, low, high) -> List[int]:
