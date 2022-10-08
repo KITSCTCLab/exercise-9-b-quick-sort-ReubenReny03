@@ -1,6 +1,7 @@
 from typing import List
 
 def sorting(data, low ,high):
+    i=0
     pivot = data[-1]
     for j in range(high-1):
         if data[j] <= pivot:
