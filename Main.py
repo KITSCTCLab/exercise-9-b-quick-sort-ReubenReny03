@@ -1,7 +1,7 @@
 from typing import List
 
 def sorting(data, low ,high):
-    i=0
+    i=low
     pivot = data[high]
     for j in range(high-1):
         if data[j] <= pivot:
@@ -16,7 +16,6 @@ def quick_sort(data, low, high) -> List[int]:
         pi = sorting(data,low,high)
         quick_sort(data,low,pi-1)
         quick_sort(data,pi+1,low)
-        return data
         
         
     
