@@ -16,7 +16,7 @@ def quick_sort(data, low, high) -> List[int]:
         pi = sorting(data,low,high)
         quick_sort(data,low,pi-1)
         quick_sort(data,pi+1,low)
-        return data
+        
         
     
 
@@ -27,4 +27,5 @@ for item in input_data.split(', '):
     data.append(int(item))
   elif item.lstrip("-").isnumeric():
     data.append(int(item))
-print(quick_sort(data, 0, len(data)-1))
+quick_sort(data, 0, len(data)-1)
+print(data)
