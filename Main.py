@@ -1,5 +1,6 @@
 from typing import List
-
+# to partition and sort the array
+# it takes 3 values the data low end and highr end
 def sorting(data, low ,high):
     i=low-1
     pivot = data[high]
@@ -9,8 +10,7 @@ def sorting(data, low ,high):
             data[i], data[j] =  data[j], data[i]
     data[i+1], data[high] = data[high],data[i+1]
     return i+1
-    
-
+# the basic code of quick sort to divide it from the pivot element
 def quick_sort(data, low, high) -> List[int]:
     if low<high:
         pi = sorting(data,low,high)
